@@ -1,0 +1,428 @@
+﻿* {
+    margin: 0;
+   
+}
+
+body {
+    background-image: url(../img/grey.jpg);
+}
+/*BUTTONS*/
+.order .btn_order {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: #b50e0e;
+    color: #ebe9e9;
+    font-family: Arial;
+    font-size: 18px;
+    border: none;
+    margin-left: 160px;
+    outline: none;
+    cursor: pointer;
+}
+
+    .order .btn_order:hover {
+        background-color: #ffffff;
+        color: #b50e0e;
+      
+    }
+
+.right_section .icons .right-nav-size,
+.right-nav-toping,
+.right-nav-bortik {
+    color: #b1adad;
+    font-size: 16px;
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Arial;
+    outline: none;
+    margin-top: 40px;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+}
+
+
+/*.right_nav.size::before {
+    content: url(https://mamamia.ua/img/size.svg);
+    display: inline-block;
+    vertical-align: middle;
+}
+.right_nav.size.active::before {
+    content: url(https://mamamia.ua/img/size-active.svg);
+
+}
+
+.right_nav.toping::before {
+    content: url(https://mamamia.ua/img/toping.svg);
+    display: inline-block;
+    vertical-align: middle;
+}
+.right_nav.toping.active::before {
+    content: url(https://mamamia.ua/img/toping-active.svg);
+}
+
+        .right_nav.bortik::before {
+            content: url(https://mamamia.ua/img/pizza-4.svg);
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+.right_nav.bortik.active::before {
+    content: url(https://mamamia.ua/img/pizza-4-active.svg);
+}*/
+
+.btn_small_size,
+.btn_middle_size {
+    border: none;
+    background-color: #ffffff;
+    font-size: 16px;
+    color: #4d4d4d;
+    outline: none;
+    text-align: center;
+    margin-right: 40px;
+    margin-left: 20px;
+    width: 200px;
+    height: 150px;
+    cursor: pointer;
+}
+
+
+    .btn_small_size p {
+        padding-top: 15px;
+    }
+    .btn_middle_size p {
+        padding-top: 10px;
+    }
+
+    .plus {
+        margin-right: 40px;
+        margin-top: 5px;
+        font-family: Arial;
+        color: #6f6f6f;
+        font-size: 12px;
+        outline: none;
+        border: none;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+
+.plus::before {
+    content: "+";
+    background-color: #dedede;
+    border-radius: 50%;
+    border: none;
+    color: #6f6f6f;
+    padding: 2px 5px;
+    margin-left: 10px;
+}
+
+#btn_submit {
+    width: 150px;
+    height: 50px;
+    background-color: #b50e0e;
+    color: #ebe9e9;
+    font-family: Arial;
+    font-size: 18px;
+    border: none;
+    margin-left: 160px;
+    outline: none;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+    #btn_submit:hover {
+        background-color: #ffffff;
+        color: #b50e0e;
+    }
+    /*Конструктор піци*/
+    .container {
+        display: flex;
+        width: 1000px;
+        height: 550px;
+        margin: 100px auto;
+        box-shadow: 10px 5px 5px #4d4d4d;
+        border-radius: 15px;
+        background-image: unset;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+    /*LEFT SECTION*/
+   
+
+        .container .left_section img {
+            width: 400px;
+            height: 300px;
+            position: absolute;
+            background-image: unset;
+           
+            border-top-left-radius: 15px;
+            margin-left: 60px;
+        }
+#pizza {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    background-image: unset;
+    background-color: #ffffff;
+    border-top-left-radius: 15px;
+   
+}
+#pizzaSous {
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    
+    border-top-left-radius: 15px;
+    top: 100px;
+    z-index: ;
+
+}
+
+        .container .left_section .title {
+            color: #b50e0e;
+            font-size: 24px;
+            text-align: center;
+            margin: 0px 70px 0;
+            font-family: Arial;
+            background-image: unset;
+            background-color: #ffffff;
+        }
+
+        .container .left_section .text {
+            color: #2e2b2b;
+            font-size: 18px;
+            text-align: center;
+            margin: 20px 60px 40px;
+            font-family: Arial;
+        }
+
+        .order{
+            margin-left: 70px;
+        }
+
+        .order .sum{
+            position: absolute;
+            border: none;
+            width: 70px;
+            height: 40px;
+            font-size: 40px;
+            color: #000000;
+            font-family: Arial;
+        }
+        
+
+            .order .uan {
+                color: #2e2b2b;
+                font-family: Arial;
+                font-size: 22px;
+                position: absolute;
+                margin-left: 90px;
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+
+
+/*RIGHT SECTION*/
+.right_section {
+   
+    position: relative;
+}
+    /*RIGHT SECTION NAV*/
+    .right_section .icons {
+        display: flex;
+        border-bottom: 2px #b1adad solid;
+        margin-left: 20px;
+        width: 450px;
+        line-height: 1;
+        outline: none;
+    }
+
+   
+        /*RIGHT SECTION SIZE*/
+.size-pizza {
+    display: flex;
+    margin: 50px 0 0 20px;
+    outline: none;
+    width: 450px;
+   
+}
+
+
+/*RIGHT SECTION SAUSE*/
+.container .right_section .sauce {
+    margin-top: 50px;
+}
+.current-topping {
+    color: #62883d;
+    font-size: 14px;
+    text-align: left;
+    text-decoration: none;
+    font-family: Arial;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+}
+    .current-topping::after {
+        content: url(https://mamamia.ua/img/check-material.svg);
+        margin-left: 10px;
+    }
+
+    .sauce .add_sauce {
+        color: #b1adad;
+        font-size: 14px;
+        text-align: left;
+        text-transform: uppercase;
+        font-family: Arial;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+
+.sauce .kinds_sauce {
+    margin-top: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    border-bottom: 1px #b1adad solid;
+    padding-bottom: 15px;
+}
+
+/*FORM*/
+.form {
+    /*display: normal;
+    visibility: visible;*/
+   
+    width: 500px;
+}
+
+    .container.is-hidden {
+        display:block;
+        visibility: hidden;
+    }
+
+#firstForm {
+    margin: 100px auto;
+}
+    #firstForm input {
+        width: 300px;
+        height: 50px;
+        font-family: Arial;
+        font-size: 16px;
+        color: #6f6f6f;
+       margin-bottom: 20px;
+     
+    }
+
+.form #firstForm p {
+    color: #b50e0e;
+    font-family: Arial;
+    font-size: 24px;
+    text-align: center;
+}
+
+/*GALLERY*/
+section, article, footer{
+    display: block;
+    font-family: Arial;
+}
+.col-inline-xs-4 .catalog-block {
+    padding: 0 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+}
+.col-inline-xs-4 {
+    
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 1px;
+    font-size: .875rem;
+    box-sizing: border-box;
+    margin: 0 100px 50px 100px;
+}
+
+.product-micro-block {
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+    margin-right: 20px;
+    text-align: center;
+    justify-content: space-between;
+    /*border: 1px solid #000000;*/
+    flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+    .product-micro-block:last-child {
+        margin-right: 0;
+    }
+    figure {
+        font-size: 0;
+        line-height: 1;
+        margin: 20px;
+        margin-bottom: 20px;
+    }
+a, a:active, a:focus, a:hover{
+    outline: none;
+    text-decoration: none;
+}
+
+a{
+    cursor: pointer;
+    color: #000000;
+    background: transparent;
+}
+
+.mama_blur{
+    min-height: 211px;
+}
+
+.v-lazy-image-loaded{
+    -webkit-filter: blur(0);
+    filter: blur(0);
+}
+.v-lazy-image {
+    
+    -webkit-transition: -webkit-filter 1s;
+    transition: -webkit-filter 1s;
+    transition: filter 1s, -webkit-filter 1s;
+    will-change: filter;
+}
+img, img:focus{
+    outline: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+.product-micro-icon.meat {
+    background-image: url(/img/pizza/meat.png);
+    max-width: 100%;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.product-micro-name{
+    display: block;
+    margin: auto;
+    color: #000000;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+
+.product-micro-description{
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    color: #000000;
+    font-style: italic;
+}

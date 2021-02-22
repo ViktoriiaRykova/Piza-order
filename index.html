@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Constructor Pizza</title>
+    <link href="css/style.css" rel="stylesheet" />
+   
+    <script src="https://kit.fontawesome.com/5672ac6428.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left_section">
+            <div id="pizza">
+                <img src="https://mamamia.ua/storage/editor/fotos/klassicheskij-bortik.png"  />
+            </div>
+            <div id="pizzaSous">
+                <img src="https://mamamia.ua/storage/editor/fotos/sous-klassicheskij_1557758736353.png" id="pizzaS"/>
+            </div>
+            <p class="title font_f">Конструктор піци</p>
+            <p class="text font_f">
+                Виберіть розмір, соус і топінги (не більше <br />
+                8). Додайте табіті <br />
+
+                За замовчуванням до складу піци входить  <br />
+                сирна основа
+            </p>
+
+            <div class="order">
+                <div class="sum">
+                    117
+                </div>
+                <p class="uan">грн</p>
+                <button type="submit" class="btn_order" onclick="openForm()">Замовити</button>
+            </div>
+        </div>
+       
+        <div class="right_section">
+            <div class="icons">
+                <button class="right-nav-size active" onclick="changeColor('size')">
+                    <img id="size" src="https://mamamia.ua/img/size-active.svg" />
+                    РОЗМІР
+                </button>
+
+                <button class="right-nav-toping active" onclick="changeColor('toping')">
+                    <img id="toping" src="https://mamamia.ua/img/toping.svg" />
+                    ТОПІНГИ
+                </button>
+
+                <button class="right-nav-bortik active" onclick="changeColor('bortik')">
+                    <img id="bortik" src="https://mamamia.ua/img/pizza-4.svg" />
+                    БОРТИК
+                </button>
+            </div>
+
+            <div class="size-pizza">
+
+
+                <button class="btn_small_size active" onclick="insert('117')" onmouseup="small()">
+                    <img id="middle-pizza" src="https://mamamia.ua/img/medium-pizza-active.svg" />
+                    <p> Середня</p>
+                </button>
+
+
+
+                <button class="btn_middle_size active" onclick="insert('147')" onmouseup="big()">
+                    <img id="big-pizza" src="https://mamamia.ua/img/large-pizza-nonactive.svg" />
+                    <p> Велика</p>
+                </button>
+
+
+            </div>
+
+            <div class="sauce">
+                <div class="current-topping">
+                    Соус класичний
+                </div>
+                <p class="add_sauce">Додати соус:</p>
+
+                <div class="kinds_sauce">
+
+
+                    <button type="button" class="plus" onclick="chooseSauce('Соус класичний')">
+                        Соус класичний
+                    </button>
+
+
+                    <button type="button" class="plus" onclick="chooseSauce('Соус BBQ')">
+                        Соус BBQ
+                    </button>
+
+
+                    <button type="button" class="plus" onclick="chooseSauce('Соус Рікота')">
+                        Соус Рікота
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container form is-hidden" onclick="form()">
+
+        <form name="firstForm" id="firstForm">
+            <p>Write your contacts</p><br />
+            <input type="text" value="" name="name" data-valid="required" data-name /><br />
+            <input type="tel" value="" name="phone" placeholder="+380 (__) ___ __ __" data-valid="required" data-phone /><br />
+            <input type="text" value="" name="adress" placeholder="Example, 2 str." data-valid="required" data-adress /><br />
+            <button type="submit" id="btn_submit" onclick="closeForm()">Save</button>
+        </form>
+    </div>
+
+    <div itemscope="itemscope" itemtype="http://schema.org/Product" class="col-inline-xs-4 catalog-block">
+        <section class="product-micro-block">
+            <header>
+                <figure>
+                    <a href="https://mamamia.ua/ua/pizza/dabl-pepperoni-203" itemprop="url" class="img-link-js">
+                        <div class="mama_blur">
+                            <picture>
+                                <img src="img/dabl-pepperoni.png" class="v-lazy-image v-lazy-image-loaded" name="pepperoni" alt="Замовити піцу Дабл Пепероні" />
+                            </picture>
+                        </div>
+                    </a>
+                </figure>
+            </header>
+            <article>
+                <div class="product-micro-name">
+                    <a href="https://mamamia.ua/ua/pizza/dabl-pepperoni-203" class="product-link-js">Дабл Пепероні</a>
+                </div>
+                <div itemprop="decription" class="product-micro-description">
+                    <p>Подвійна порція Пепероніб соус Класичний</p>
+                </div>
+            </article>
+            <footer></footer>
+        </section>
+   
+        <section class="product-micro-block">
+            <header>
+                <figure>
+                    <a href="https://mamamia.ua/ua/pizza/dabl-pepperoni-203" itemprop="url" class="img-link-js">
+                        <div class="mama_blur">
+                            <picture>
+                                <img src="img/margaritapng.png" class="v-lazy-image v-lazy-image-loaded" name="margarita" alt="Замовити піцу Дабл Пепероні" />
+                            </picture>
+                        </div>
+                    </a>
+                </figure>
+            </header>
+            <article>
+                <div class="product-micro-name">
+                    <a href="https://mamamia.ua/ua/pizza/dabl-pepperoni-203" class="product-link-js">Маргарита</a>
+                </div>
+                <div itemprop="decription" class="product-micro-description">
+                    <p>Подвійна порція Пепероніб соус Класичний</p>
+                </div>
+            </article>
+        
+        </section>
+      
+        <section class="product-micro-block">
+            <header>
+                <figure>
+                    <a href="https://mamamia.ua/ua/pizza/dabl-pepperoni-203" itemprop="url" class="img-link-js">
+                        <div class="mama_blur">
+                            <picture>
+                                <img src="img/kantri.png" class="v-lazy-image v-lazy-image-loaded" name="kantri" alt="Замовити піцу Дабл Пепероні" />
+                            </picture>
+                        </div>
+                    </a>
+                </figure>
+            </header>
+
+            <article>
+                <div class="product-micro-name">
+                    <a href="https://mamamia.ua/ua/pizza/dabl-pepperoni-203" class="product-link-js">Кантрі</a>
+                </div>
+                <div itemprop="decription" class="product-micro-description">
+                    <p>Подвійна порція Пепероніб соус Класичний</p>
+                </div>
+            </article>
+        </section>
+    </div>
+    
+    <script src="js/index.js"></script>
+</body>
+</html>
